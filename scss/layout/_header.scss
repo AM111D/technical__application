@@ -1,0 +1,94 @@
+.main-nav {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 140px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list__item {
+    color: #333333;
+    margin-right: 40px;
+}
+
+.contact-info__contact {
+margin-right: 40px;
+}
+
+.contacts__btn {
+    width: 140px;
+    height: 45px;
+    background-color: #859BA6;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+
+
+
+input[type="radio"] {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+  }
+  
+  input[type="radio"]:checked::before {
+    background-color: #859BA6;
+  }
+  
+  #language-ua::before {
+    content: "UA";
+    margin: auto;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #language-ru::before {
+    content: "RU";
+    margin: auto;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    margin-left: 10px;
+    color: #000000; /* Изменение цвета текста на черный */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Дополнительные стили для контейнера */
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+  }
