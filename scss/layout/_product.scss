@@ -3,14 +3,23 @@
 
 }
 
+
+
 .product-content {
     display: flex;
     justify-content: center;
     height: 545px;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: flex-start
+      }
 }
 
 .product-left {
 margin-top: 148px;
+@media screen and (max-width: 768px) {
+ margin-top: 20px;
+  }
 }
 
 .product-title {
@@ -20,7 +29,10 @@ font-weight: 500;
 line-height: 65px;
 letter-spacing: 0em;
 text-align: left;
-
+@media screen and (max-width: 768px) {
+    font-size: 30px;
+   
+  }
 }
 
 .product-paragraph {
@@ -35,11 +47,21 @@ text-align: left;
 
 .product-image {
     margin-top: 40px;
+    @media screen and (max-width: 768px) {
+        height: 266px;
+        width: 369px;
+        margin-left: 20px;
+       
+      }
 }
 
 .product-right {
 margin-top: 290px;
 margin-left: 40px;
+@media screen and (max-width: 768px) {
+    margin-top: 60px;
+    margin-left: 0;
+     }
 }
 
 .product-subtitle {
@@ -49,8 +71,14 @@ margin-left: 40px;
     line-height: 31px;
     letter-spacing: 0.01em;
     text-align: left;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+         }
     
-    
+}
+
+.btn {
+margin-top: 15px;
 }
 
 .product-text {
@@ -60,7 +88,9 @@ margin-left: 40px;
     line-height: 31px;
     letter-spacing: 0.01em;
     text-align: left;
-    
+    @media screen and (max-width: 768px) {
+        margin-bottom: 15px;
+           }
 
 }
 
@@ -79,6 +109,9 @@ text-align: center;
     color: #859BA6;
     border: 1px solid #859BA6;
     border-radius: 8px ;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+           }
 }
 
 
