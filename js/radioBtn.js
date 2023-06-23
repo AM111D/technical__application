@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
         labelRU.style.color = '#FFFFFF';
       }
 
-      // Сохранение выбранного языка в localStorage
       localStorage.setItem('selectedLanguage', selectedValue);
     });
   });
 
-  // Проверка сохраненного языка при загрузке страницы
   const selectedLanguage = localStorage.getItem('selectedLanguage');
   if (selectedLanguage === 'ua') {
     radioButtons[0].checked = true;

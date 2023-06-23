@@ -58,9 +58,6 @@ width: 120px;
     color: black;
     }
     @media screen and (max-width: 768px) {
-        // width: 100px;
-        // height: 30px;
-        // font-size: 12px;
         background: none;
         color: #859BA6;
         border: 1px solid #859BA6;
@@ -123,13 +120,12 @@ input[type="radio"]::before {
   
   label {
     margin-left: 10px;
-    color: #000000; /* Изменение цвета текста на черный */
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  /* Дополнительные стили для контейнера */
+
   .contacts {
     display: flex;
     align-items: center;
