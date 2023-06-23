@@ -40,8 +40,6 @@ svg {
   .container {
     width: 480px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 .cookie-consent {
@@ -231,6 +229,11 @@ label {
   display: flex;
   align-items: center;
   margin-left: 100px;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    margin-left: 70px;
+  }
 }
 
 .backdrop {
