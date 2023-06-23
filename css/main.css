@@ -34,13 +34,14 @@ svg {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .cookie-consent {
