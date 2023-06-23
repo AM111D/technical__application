@@ -13,107 +13,117 @@
     </head>
     <body>
         <div id="cookieConsent" class="cookie-consent">
-            Використовуючи цей сайт, ви даєте згоду на роботу з файлами cookies.
-            <button id="cookieConsentButton" class="cookie-consent__button">Згоден</button>
+            <div>
+                <p class="cookieText">Використовуючи цей сайт, ви даєте згоду на роботу з файлами cookies.</p>
+                <button id="cookieConsentButton" class="cookie-consent__button">Згоден</button>
+            </div>
         </div>
-        <header class="header">
-            <div class="container main-nav">
-                <a href="./index.html">
-                    <img src="./images/desktop/Meltem_logo.png" class="logo animate__animated animate__bounce" alt="">
+    </div>
+    <header class="header">
+        <div class="container main-nav">
+            <a href="./index.html">
+                <img src="./images/desktop/Meltem_logo.png" class="logo animate__animated animate__bounce" alt="">
+            </a>
+            <nav>
+                <ul class="nav-list nav-list">
+                    <li class="nav-list__item">
+                        <a class="nav-list__link link-studia" href="./index.html">Компанія</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Продукція</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Статті</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Рішення</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <a class="contact-info__contact" href="tel:+0(800)00-00-00">
+                    0(800)00-00-00
                 </a>
-                <nav>
-                    <ul class="nav-list nav-list">
-                        <li class="nav-list__item">
-                            <a class="nav-list__link link-studia" href="./index.html">Компанія</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link" href="#">Продукція</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link" href="#">Статті</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link" href="#">Рішення</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a class="nav-list__link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="contacts">
-                    <a class="contact-info__contact" href="tel:+0(800)00-00-00">
-                        0(800)00-00-00
-                    </a>
-                    <button type="button" class="contacts__btn">Зв’язатись</button>
-                    <div class="radioBtn">
-                        <input
-                            type="radio"
-                            name="language"
-                            id="language-ua"
-                            value="ua"
-                            checked
-                        >
-                        <input
-                            type="radio"
-                            name="language"
-                            id="language-ru"
-                            value="ru"
-                        >
-                    </div>
-                </div>
-                <button type="button" class="header-open__btn" id="menu-toggle">
-                    <svg
-                        height="40px"
-                        width="40px"
-                        class="header-open__icon"
-                        id="menu-icon"
+                <button type="button" class="contacts__btn" data-modal-open>Зв’язатись</button>
+                <div class="radioBtn">
+                    <input
+                        type="radio"
+                        name="language"
+                        class="language-radio"
+                        id="language-ua"
+                        value="ua"
+                        checked
                     >
-                        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                    <input
+                        type="radio"
+                        name="language"
+                        class="language-radio"
+                        id="language-ru"
+                        value="ru"
+                    >
+                </div>
+            </div>
+            <button type="button" class="header-open__btn" id="menu-toggle">
+                <svg
+                    height="40px"
+                    width="40px"
+                    class="header-open__icon"
+                    id="menu-icon"
+                >
+                    <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <button type="button" class="header-close__btn">
+                    <svg height="40px" width="40px" class="header-close__icon">
+                        <use href="./images/symbol-defs.svg#icon-close_40px"></use>
                     </svg>
                 </button>
-            </div>
-            <div class="mob-menu is-hidden">
-                <div class="container">
-                    <button type="button" class="header-close__btn">
-                        <svg height="40px" width="40px" class="header-close__icon">
-                            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
-                        </svg>
-                    </button>
-                    <ul class="mob-menu-list">
-                        <li class="mob-menu-item">
-                            <a href="./index.html" class="mob-menu-link">Студия</a>
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-item">
+                        <a href="./index.html" class="mob-menu-link">Компанія</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="./portfolio.html" class="mob-menu-link">Продукція</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Статті</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Рішення</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Контакти</a>
+                    </li>
+                </ul>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-contacts-list">
+                        <li class="mob-contacts-item">
+                            <a href="" class="mob-contacts-tel-link">0 (800) 00-00-00</a>
                         </li>
-                        <li class="mob-menu-item">
-                            <a href="./portfolio.html" class="mob-menu-link">Портфолио</a>
-                        </li>
-                        <li class="mob-menu-item">
-                            <a href="" class="mob-menu-link">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="mob-menu-bottom">
-                        <ul class="mob-contacts-list">
-                            <li class="mob-contacts-item">
-                                <a href="" class="mob-contacts-tel-link">+38 096 111 11 11</a>
-                            </li>
-                            <li class="mob-contacts-item">
-                                <a href="" class="mob-contacts-link">info@devstudio.com</a>
-                            </li>
-                        </ul>
-                        <ul class="mob-social-list">
-                            <li class="mob-social-item">
-                                <a href="" class="mob-social-link">Instagram</a>
-                            </li>
-                            <li class="mob-social-item">
-                                <a href="" class="mob-social-link">Twitter</a>
-                            </li>
-                            <li class="mob-social-item">
-                                <a href="" class="mob-social-link">Facebook</a>
-                            </li>
-                            <li class="mob-social-item">
-                                <a href="" class="mob-social-link">LinkedIn</a>
-                            </li>
-                        </ul>
                     </div>
+                </div>
+                <div class="radioBtnn">
+                    <input
+                        type="radio"
+                        name="language"
+                        class="language-radio"
+                        id="language-ua"
+                        value="ua"
+                        checked
+                    >
+                    <input
+                        type="radio"
+                        name="language"
+                        class="language-radio"
+                        id="language-ru"
+                        value="ru"
+                    >
                 </div>
             </div>
         </header>
@@ -154,8 +164,41 @@
                 </div>
             </section>
         </main>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <div class="modal-close" data-modal-close>
+                    <div class="modal-close-radius">
+                        <svg class="modal-close-x" width="11" height="11">
+                            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                        </svg>
+                    </div>
+                </div>
+                <form id="contactForm">
+                    <div class="formText">
+                        <b>Залишайте заявку</b>
+                        <p>Ми зв’яжемося з вами найближчим часом.</p>
+                    </div>
+                    <div class="styleForm">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Введите ваше имя"
+                            required
+                        >
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="+380-00-000-00-00*"
+                            required
+                        >
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
         <script src="./js/index.js"></script>
         <script src="./js/radioBtn.js"></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

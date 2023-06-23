@@ -79,6 +79,7 @@ margin-left: 40px;
 
 .btn {
 margin-top: 15px;
+
 }
 
 .product-text {
@@ -109,6 +110,8 @@ text-align: center;
     color: #859BA6;
     border: 1px solid #859BA6;
     border-radius: 8px ;
+    cursor: pointer;
+    &:hover {color: black}
     @media screen and (max-width: 768px) {
         margin-bottom: 20px;
            }

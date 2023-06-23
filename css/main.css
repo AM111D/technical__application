@@ -46,21 +46,52 @@ svg {
 }
 .cookie-consent {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
   text-align: center;
+  width: 415px;
+  height: 85px;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+
+.cookie-consent div {
+  display: flex;
+}
+
+.cookie-consent div p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: HelveticaNeueCyr;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 254px;
 }
 
 .cookie-consent__button {
   background-color: #fff;
-  color: #000;
+  color: #859BA6;
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  border: 2px solid #859BA6;
+}
+
+.cookieText {
+  text-align: left;
 }
 
 .header {
@@ -124,6 +155,10 @@ svg {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: center;
+  cursor: pointer;
+}
+.contacts__btn:hover {
+  color: black;
 }
 @media screen and (max-width: 768px) {
   .contacts__btn {
@@ -199,6 +234,66 @@ label {
   margin-left: 100px;
 }
 
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal {
+  position: absolute;
+  padding: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 451px;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.modal-close-radius {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-x {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  cursor: pointer;
+}
+.modal-close-x:hover, .modal-close-x:focus {
+  fill: var(--accent-color);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.icon-modal {
+  position: absolute;
+}
+
 .mob-menu.is-hidden {
   display: none;
 }
@@ -219,10 +314,19 @@ label {
   background-color: transparent;
   border: none;
   padding: 10px 0;
+  fill: #859BA6;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .header-open__btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .radioBtnn {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -238,6 +342,34 @@ label {
   background-color: transparent;
   border: none;
   display: none;
+}
+
+.mob-menu-item {
+  margin-top: 71px;
+  text-align: center;
+}
+
+.mob-menu-link {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.mob-contacts-item {
+  margin-top: 40px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.radioBtnnn {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .product-section {
@@ -356,9 +488,55 @@ label {
   color: #859BA6;
   border: 1px solid #859BA6;
   border-radius: 8px;
+  cursor: pointer;
+}
+.product-button:hover {
+  color: black;
 }
 @media screen and (max-width: 768px) {
   .product-button {
     margin-bottom: 20px;
   }
+}
+
+#contactForm {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.formText b {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.formText p {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.styleForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.styleForm input {
+  width: 290px;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+#contactForm button {
+  width: 290px;
+  height: 35px;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */

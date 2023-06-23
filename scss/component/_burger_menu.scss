@@ -18,10 +18,21 @@
     background-color: transparent;
     border: none;
     padding: 10px 0;
+    fill: #859BA6;
+    cursor: pointer;
+   
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
+
+  .radioBtnn {
+    @media screen and (max-width: 768px) {
+        display: block;
+        text-align: center;
+    }
+  
+}
   
   .header-open__icon,
   .header-close__icon {
@@ -36,3 +47,33 @@
     border: none;
     display: none;
   }
+
+  .mob-menu-item {
+    margin-top: 71px;
+    text-align: center;
+}
+
+  .mob-menu-link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+   
+}
+
+.mob-contacts-item {
+    margin-top: 40px;
+    text-align: center;
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0em;
+
+}
+
+.radioBtnnn {
+text-align: center;
+margin-top: 20px;
+}
