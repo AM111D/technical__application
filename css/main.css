@@ -166,6 +166,10 @@ svg {
   }
 }
 
+.contact__btn__style {
+  margin-left: -20px;
+}
+
 @media screen and (max-width: 768px) {
   .radioBtn {
     display: none;
