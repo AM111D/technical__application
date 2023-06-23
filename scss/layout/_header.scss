@@ -1,3 +1,8 @@
+.header {
+    height: 45px;
+    margin-bottom: 15px;
+}
+
 .main-nav {
     display: flex;
     margin-top: 40px;
@@ -7,10 +12,18 @@
 
 .logo {
     margin-right: 140px;
+    @media screen and (max-width: 768px) {
+        margin-right: 40px;
+        width: 90px;
+        height: 18px;
+      }
 }
 
 .nav-list {
     display: flex;
+    @media screen and (max-width: 768px) {
+        display: none;
+      }
 }
 
 .nav-list__item {
@@ -19,7 +32,11 @@
 }
 
 .contact-info__contact {
-margin-right: 40px;
+margin-right: 20px;
+width: 120px;
+@media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .contacts__btn {
@@ -29,6 +46,27 @@ margin-right: 40px;
     color: #fff;
     border: none;
     border-radius: 7px;
+    margin-right: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        background: none;
+        color: #859BA6;
+        border: 1px solid #859BA6;
+    }
+}
+
+.radioBtn {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 
@@ -42,9 +80,9 @@ input[type="radio"] {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-  }
-  
-  input[type="radio"]::before {
+}
+
+input[type="radio"]::before {
     content: "";
     position: absolute;
     top: 0;
@@ -92,3 +130,43 @@ input[type="radio"] {
     align-items: center;
     margin-left: 100px;
   }
+
+  .mob-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.header-open__btn {
+    // line-height: 0;
+    // background-color: transparent;
+    // border: none;
+    // padding: 10px 0;
+    // &:hover .header-open__icon,
+    // &:focus .header-mopen__icon {
+    //   fill: var(--accent-color);
+    // }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mob-menu {
+    z-index: 1;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    position: inherit;
+    background-color: gray;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-open__btn {
+
+}
+
+.header-open__icon {
+    width: 30px;
+    height: 30px;
+}
