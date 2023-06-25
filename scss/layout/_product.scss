@@ -1,5 +1,4 @@
 .product-section {
-    background: linear-gradient(0deg, rgba(212, 227, 236, 0.3) -2.6%, rgba(247, 249, 251, 0.3) 100%);
 
 }
 
@@ -11,7 +10,7 @@
     height: 545px;
     @media screen and (max-width: 768px) {
         flex-wrap: wrap;
-        justify-content: flex-start
+        justify-content: center
       }
 }
 
@@ -48,8 +47,8 @@ text-align: left;
 .product-image {
     margin-top: 40px;
     @media screen and (max-width: 768px) {
-        height: 266px;
-        width: 369px;
+        height: 80%;
+        width: 70%;
         margin-left: 20px;
        
       }
@@ -119,3 +118,10 @@ text-align: center;
 
 
 
+.backGround {
+    background: linear-gradient(0deg, rgba(212, 227, 236, 0.3) -2.6%, rgba(247, 249, 251, 0.3) 100%);
+
+@media screen and (max-width: 768px) {
+    height: 124vh;
+       }
+}
